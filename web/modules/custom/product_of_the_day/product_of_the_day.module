@@ -1,0 +1,11 @@
+<?php 
+
+function product_of_the_day_menu() {
+  $items['admin/config/product-of-the-day'] = [
+    'title' => 'Manage Products',
+    'page callback' => 'Drupal\product_of_the_day\Controller\ProductController::overview',
+    'access arguments' => ['administer site configuration'],
+    'type' => MENU_NORMAL_ITEM,
+  ];
+  return $items;
+}

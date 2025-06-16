@@ -1,0 +1,39 @@
+entity.product.add_form:
+  path: '/admin/content/product/add'
+  defaults:
+    _entity_form: 'product.add'
+    _title: 'Add Product'
+  requirements:
+    _permission: 'administer product entity'
+
+entity.product.edit_form:
+  path: '/admin/content/product/{product}/edit'
+  defaults:
+    _entity_form: 'product.edit'
+    _title: 'Edit Product'
+  requirements:
+    _permission: 'administer product entity'
+
+entity.product.delete_form:
+  path: '/admin/content/product/{product}/delete'
+  defaults:
+    _entity_form: 'product.delete'
+    _title: 'Delete Product'
+  requirements:
+    _permission: 'administer product entity'
+
+entity.product.collection:
+  path: '/admin/content/products'
+  defaults:
+    _entity_list: 'product'
+    _title: 'Products'
+  requirements:
+    _permission: 'administer product entity'
+
+product_of_the_day.settings:
+  path: '/admin/config/product-of-the-day'
+  defaults:
+    _form: '\Drupal\product_of_the_day\Form\ProductSettingsForm'
+    _title: 'Product of the Day Settings'
+  requirements:
+    _permission: 'administer site configuration'

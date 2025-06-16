@@ -1,0 +1,17 @@
+product_of_the_day.collection:
+  title: 'Products'
+  description: 'List of products'
+  parent: system.admin_content
+  route_name: entity.product.collection
+  weight: 100
+
+product_of_the_day.settings:
+  title: 'Product of the Day'
+  description: 'Configure product of the day settings'
+  parent: system.admin_config
+  route_name: product_of_the_day.settings
+  weight: 100
+
+entity.product.add_form:
+  route_name: entity.product.add_form
+  title: 'Add Product'

@@ -1,0 +1,14 @@
+name: 'Test Theme'
+type: theme
+description: 'A custom Drupal 11 theme using Bootstrap 5 as a base.'
+core_version_requirement: ^11
+base theme: bootstrap5
+
+libraries:
+  - test_theme/global-styling
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'

@@ -1,0 +1,7 @@
+name: 'Product of the Day'
+type: module
+description: 'Manage and display a random product flagged as product of the day.'
+core_version_requirement: ^11
+package: Custom
+dependencies:
+  - block

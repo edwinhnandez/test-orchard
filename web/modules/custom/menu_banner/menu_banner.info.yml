@@ -1,0 +1,8 @@
+name: Menu Banner
+type: module
+description: 'Dynamic banner based on menu structure.'
+core_version_requirement: ^11
+package: Custom
+dependencies:
+  - node
+  

@@ -1,0 +1,12 @@
+services:
+  menu_banner.banner_image_subscriber:
+    class: Drupal\menu_banner\EventSubscriber\BannerImageSubscriber
+    arguments:
+      - '@path.matcher'
+      - '@menu.link_tree'
+      - '@path.current'
+      - '@path_alias.manager'
+      - '@current_route_match'
+      - '@renderer'
+    tags:
+      - { name: event_subscriber }

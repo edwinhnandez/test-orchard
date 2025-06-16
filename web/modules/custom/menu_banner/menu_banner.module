@@ -1,0 +1,6 @@
+<?php 
+
+
+function menu_banner_preprocess_page(&$variables) {
+  $variables['banner_image_url'] = \Drupal::request()->attributes->get('banner_image_url') ?? '/default.jpg';
+}

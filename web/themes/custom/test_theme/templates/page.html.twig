@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ language.id|default('en') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ head.title }}</title>
+    {{ attach_library('test_theme/global') }}
+</head>
+<body>
+    <header>
+        <h1>{{ site_name }}</h1>
+        {{ page.header }}
+    </header>
+    <main>
+        <div class="banner" style="height: 400px; background-image: url('{{ banner_image_url }}');"></div>
+        {{ page.content }}
+    </main>
+    <footer>
+        {{ page.footer }}
+    </footer>
+</body>
+</html>
