@@ -13,7 +13,7 @@ _core:
 id: test_theme_main_menu
 theme: test_theme
 region: header
-weight: 0
+weight: 2
 provider: null
 plugin: 'system_menu_block:main'
 settings:

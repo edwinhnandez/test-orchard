@@ -9,3 +9,19 @@ function product_of_the_day_menu() {
   ];
   return $items;
 }
+
+/**
+ * Implements hook_theme().
+ */
+function product_of_the_day_theme($existing, $type, $theme, $path) {
+  return [
+    'product_of_the_day' => [
+      'variables' => [
+        'title' => NULL,
+        'summary' => NULL,
+        'image' => NULL,
+        'cta_url' => NULL,
+      ],
+    ],
+  ];
+}
